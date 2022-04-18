@@ -1,13 +1,11 @@
-
 import { useEffect, useState, createContext } from "react";
-
 import jwt_decode from "jwt-decode";
 export const UsersContext = createContext();
 
 export const UsersContextProvider = ({ children }) => {
     const [user, setUser] = useState({});
     const [rightWord, setrightWord] = useState({});
-    const userON = JSON.parse(localStorage.getItem("user"));
+    // const userON = JSON.parse(localStorage.getItem("user"));
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     useEffect(() =>{
         if (localStorage.token!==undefined) {
@@ -18,7 +16,7 @@ export const UsersContextProvider = ({ children }) => {
         }
         }, []); 
     return (
-        <UsersContext.Provider value={{user, setUser, isLoggedIn, setIsLoggedIn,userON,rightWord, setrightWord} }>
+        <UsersContext.Provider value={{user, setUser, isLoggedIn, setIsLoggedIn,rightWord, setrightWord} }>
             {children}
         </UsersContext.Provider>
     )

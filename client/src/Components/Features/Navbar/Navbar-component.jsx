@@ -1,12 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
+import { useContext} from "react";
 import { UsersContext } from "../../../Context/User/User-context";
 import "./NavBar.css";
 import { MdLogout } from 'react-icons/md';
-import { CgProfile } from 'react-icons/cg';
-
-
-
 
 export default function Navbar() {
   const navigate = useNavigate();
