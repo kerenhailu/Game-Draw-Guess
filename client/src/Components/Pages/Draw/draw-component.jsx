@@ -15,7 +15,7 @@ export default function Draw() {
   const [elements,setElements]=useState([]);
   const [drawing,setDrawing]=useState();
   const [elementType,setElementType]=useState("line");
-
+let {rightWord, setrightWord}=useState({});
   useLayoutEffect(()=>{
     const canvas= document.getElementById("canvas");
     const context=canvas.getContext("2d");
@@ -58,9 +58,11 @@ setElements((prevState)=>[...prevState,element]);
    const changeComponent = () => {
     setContactGuess(!contactGuess);
    }
+   
   return (
     <div>
       <h1>drawwwwwwwwww</h1>
+      <input type={String} onChange={(e)=>setrightWord(e.target.value)}/>
       <button className="cntcToggleBtn" onClick={changeComponent}> {contactGuess ? "click if you finish" : "click to guess"}  </button>
        {
            contactGuess ? "" :  <Guess/>
