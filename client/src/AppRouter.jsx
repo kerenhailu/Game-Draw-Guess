@@ -21,7 +21,7 @@ export const AppRouter = () => {
             <Route exact path="/words" element={<Words />}> </Route>
           </Routes>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
 
 

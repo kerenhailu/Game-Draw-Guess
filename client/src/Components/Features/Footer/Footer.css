@@ -1,4 +1,6 @@
-
+#container{
+  color: white;
+}
 .hidden-Footer {
   width: 100%;
   height: 10vh;

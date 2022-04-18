@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer" >
       <div id="button"></div>
       <div id="container">
-        <h3>@Copyright of Keren Hailu,Ermias Mungestu,Eliyahu Belay,Oshri Tzagay</h3>
+        <h3>@Copyright of Keren Hailu</h3>
 
       </div>
     </footer>

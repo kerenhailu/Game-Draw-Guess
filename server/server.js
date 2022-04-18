@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
     res.send("conect!!");
 })
 
-app.use(passport.initialize());
+// app.use(passport.initialize());
 app.use('/users',userRouter);
 
 app.listen(port, () => {
