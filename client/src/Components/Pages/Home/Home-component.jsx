@@ -1,12 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, Route } from 'react-router-dom';
 import Draw from '../Draw/draw-component';
 import Guess from '../Guess/guess-component'
 import './home.css'
 export default function Home() {
-  const {userON} = useState({});
+let [user,setUser] = useState({}) ;
+useEffect(()=>{
+  let person = prompt("Please enter your name");
+    setUser(person);
+},[]);
+  
   return (
     <div>
+      <h1>{user}</h1>
 <h1>Welcome To Guess & Draw </h1> 
 <h1>Lets Play </h1>
  <button><Link to="/guess">Guess</Link></button>
