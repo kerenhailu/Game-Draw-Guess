@@ -1,0 +1,25 @@
+.TopFive {
+  text-align: left;
+  width: 30vw;
+  margin-left: 2%;
+/* display:grid;
+    gap: 3px;
+    grid-area: TopFive;
+    grid-template-areas:
+    'header header header header header'
+    'TopFive Profile Profile Profile manu'
+    'TopFive Profile Profile Profile manu'
+    'TopFive Profile Profile Profile manu'
+    'TopFive footer footer footer footer' */
+    
+}
+.imgProfile {
+  width: 3vw;
+  height: 8vh;
+  border-radius: 50%;
+}
+.imgLike {
+  margin-top: 3%;
+  width: 2vw;
+  height: 2vh;
+}

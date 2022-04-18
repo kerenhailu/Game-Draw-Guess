@@ -1,0 +1,6 @@
+/* .rowsTable:nth-child(2){
+    background-color: 	rgb(128,128,128);
+} */
+.rowsTable:hover{
+    background-color: 	rgb(128,128,128);
+}

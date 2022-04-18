@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat+Alternates&family=Righteous&display=swap');
+.the-navbar{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    justify-content: space-around; */
+    height: 15vh;
+    width: 98vw;
+
+    
+}
+.nav-links{
+    font-size: 30px;
+    text-decoration: none;
+}
+.PicUser{
+    width: 4vw;
+    height: 4vh;
+    border-radius: 50%;
+}
+.left-nav{
+    margin-top: 7px;
+    font-family: 'Righteous', cursive;
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+}
+
+.right-nav{
+    display: flex;
+    width: 30vw;
+    justify-content:space-around;
+    justify-content: flex-end;
+
+    /* justify-content: ; */
+}
+.right-nav a{
+    
+    margin: 10px;
+    font-size: 32px;
+}
+
+.right-nav a:visited{
+    color: black;
+}
+.left-nav a:visited{
+    color: black;
+}

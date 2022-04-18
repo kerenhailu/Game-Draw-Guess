@@ -1,0 +1,13 @@
+.theLightDiv{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 92vw;
+    position: fixed;
+}
+.theImg{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+}
