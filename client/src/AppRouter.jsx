@@ -6,6 +6,9 @@ import Draw from './Components/Pages/Draw/draw-component';
 import Guess from './Components/Pages/Guess/guess-component';
 import Words from './Components/Pages/WordsLevel/words-component';
 import Waiting from './Components/Pages/Waiting/waiting-component';
+import Easy from "./Components/Features/Level/Easy/easy-component";
+import Middle from "./Components/Features/Level/Middle/middle-component";
+import Hard from "./Components/Features/Level/Hard/hard-component";
 
 export const AppRouter = () => {
   return (
@@ -19,6 +22,9 @@ export const AppRouter = () => {
             <Route exact path="/guess" element={<Guess />}> </Route>
             <Route exact path="/waiting" element={<Waiting />}> </Route>
             <Route exact path="/words" element={<Words />}> </Route>
+            <Route exact path="/easy" element={<Easy />}> </Route>
+            <Route exact path="/middle" element={<Middle />}> </Route>
+            <Route exact path="/hard" element={<Hard />}> </Route>
           </Routes>
         </div>
         {/* <Footer /> */}

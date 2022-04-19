@@ -4,6 +4,7 @@ export const UsersContext = createContext();
 
 export const UsersContextProvider = ({ children }) => {
     const [user, setUser] = useState({});
+    const [wordDraw, setWordDraw] = useState("");
     const [rightWord, setrightWord] = useState({});
     // const userON = JSON.parse(localStorage.getItem("user"));
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -16,7 +17,7 @@ export const UsersContextProvider = ({ children }) => {
         }
         }, []); 
     return (
-        <UsersContext.Provider value={{user, setUser, isLoggedIn, setIsLoggedIn,rightWord, setrightWord} }>
+        <UsersContext.Provider value={{user, setUser, isLoggedIn, setIsLoggedIn,rightWord, setrightWord,wordDraw, setWordDraw} }>
             {children}
         </UsersContext.Provider>
     )

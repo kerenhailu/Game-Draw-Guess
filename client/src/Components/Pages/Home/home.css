@@ -1,0 +1,18 @@
+.btnStart{
+    border: none;
+    margin: 1%;
+    font-size: large;
+    color: black;
+    background-color:white;
+    transition: 1s;
+    font-weight: bold;
+    /* text-decoration: none; */
+}
+
+.btnStart:hover{
+    background-color: blanchedalmond;
+    padding: 0.5%;
+}
+Link{
+    /* text-decoration: none; */
+}
