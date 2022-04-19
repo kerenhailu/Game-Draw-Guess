@@ -34,8 +34,12 @@ const style = {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             <p onClick={() => setOpen(!open)} style={{ cursor: "pointer", position: "relative", left: "50%", bottom: "25px" }}>&#9747;</p>
             <p>wtite the word you draw!</p> 
-            <input type={String} maxlength="6" onChange={(e)=>setWordDraw(e.target.value)}/>
-      <Link to="/draw"><button >click</button></Link>
+            <input type={String} maxLength="6" onChange={(e)=>setWordDraw(e.target.value)}/>
+            <br/>
+      <Link to="/draw">
+        <button onClick={() => setOpen(!open)}>Draw</button>
+        </Link>
+        
           </Typography>
         </Box>
       </Modal>

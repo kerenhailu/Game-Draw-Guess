@@ -22,7 +22,13 @@ const style = {
 
 export default function Words() {
   const [open, setOpen] = useState(true);
-
+  // const [lengthWord,setLengthWord]=useState([5,6,7]);
+const a=()=>{
+  <div className="inputWordIn">
+<input type={String} title="what you draw" />
+<button>click</button>
+  </div>
+}
   return (
     <div>
       <Modal
@@ -47,12 +53,13 @@ export default function Words() {
             <Link to="/easy">
               <button onClick={() => setOpen(!open)}>Easy(4)</button>
             </Link>
-            <Link to="/Middle">
+            <Link to="/middle">
               <button onClick={() => setOpen(!open)}>Middle(5)</button>
             </Link>
-            <Link to="/Hard">
+            <Link to="/hard">
               <button onClick={() => setOpen(!open)}>Hard(6)</button>
             </Link>
+            <div className="inputWordIn"></div>
           </Typography>
         </Box>
       </Modal>

@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import rough from "roughjs/bundled/rough.esm";
 import getStroke from "perfect-freehand";
+import { Link } from "react-router-dom";
 
 const generator = rough.generator();
 
@@ -365,6 +366,7 @@ const Draw = () => {
 
   return (
     <div>
+      <Link to="/guess">Guess</Link>
       <div style={{ position: "fixed" }}>
         <input
           type="radio"
