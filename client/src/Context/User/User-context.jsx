@@ -5,8 +5,8 @@ export const UsersContext = createContext();
 export const UsersContextProvider = ({ children }) => {
     const [user, setUser] = useState({});
     // const [wordDraw, setWordDraw] = useState("");
-    const [guessWord, setGuessWord] = useState("");
-    const [rightWord, setRightWord] = useState("");
+    const [guessWord, setGuessWord] = useState({});
+    const [rightWord, setRightWord] = useState({});
     // const [isLoggedIn, setIsLoggedIn] = useState(false);
     // useEffect(() =>{
     //     if (localStorage.token!==undefined) {

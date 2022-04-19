@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link, Route } from 'react-router-dom';
 import Draw from '../Draw/draw-component';
 import Guess from '../Guess/guess-component'
@@ -6,6 +6,7 @@ import './home.css'
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { UsersContext } from '../../../Context/User/User-context';
 const style = {
   position: "absolute",
   top: "50%",
@@ -24,10 +25,7 @@ export default function Home() {
 let [user,setUser] = useState({}) ;
 const [open, setOpen] = useState(false);
   const [lengthWord,setLengthWord]=useState(4);
-    const {rightWord, setRightWord} = useState("");
-  
-
-
+    let { rightWord, setRightWord } = useContext(UsersContext);
 // useEffect(()=>{
 //   let person = prompt("Please enter your name");
 //     setUser(person);
@@ -39,11 +37,11 @@ const [open, setOpen] = useState(false);
 // <button onClick={() => setOpen(!open)}>click</button>
 //   </div>
 // }
-const updateRightWord = (event) => {
-  // setRightWord(e.target.value) ;
-  rightWord[event.target.name]=event.target.value
-  console.log(rightWord);
-};
+// const updateRightWord = (event) => {
+//   setRightWord(event.target.value) ;
+//   // rightWord[event.target.name]=event.target.value;
+//   console.log(rightWord);
+// };
 // function ChangeInput(event){
 //   addProduct
 // }
@@ -86,9 +84,10 @@ alt='draw'/>
               <button onClick={() => setLengthWord(6)}>Hard(6)</button>
             {/* </Link> */}
             <div className="inputWordIn">
-            <input type="String" title="what you draw" maxLength={lengthWord} name='rightWord' onChange={updateRightWord}/>
+            <input type="String" placeholder="what you draw" maxLength={lengthWord} name='name' onChange={(e)=>setRightWord(e.target.value)}/>
             <Link to="/draw">
-            <button onClick={() => setOpen(!open)}>click</button>
+            <button onClick={() => {console.log(rightWord);  setOpen(!open)}}>click</button>
+            
             </Link>
             </div>
           </Typography>
